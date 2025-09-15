@@ -42,7 +42,15 @@ export default function MyNavbar() {
   return (
     <Navbar bg="dark" variant="dark" expand="lg" fixed="top">
       <Container>
-        <Navbar.Brand as={Link} to="/">Tekstil Mağazası</Navbar.Brand>
+        <Navbar.Brand as={Link} to="/">
+          <img
+            src="/img/logo2.png"
+            alt="Logo"
+            height="40"
+            style={{ objectFit: "contain" }}
+            className="me-2"
+          />
+        </Navbar.Brand>
         <Nav className="ms-auto">
           {/* Ana Sayfa butonuna özel onClick ekliyoruz */}
           <Nav.Link as={Link} to="/" onClick={handleHomeClick}>Ana Sayfa</Nav.Link>
