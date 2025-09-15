@@ -6,6 +6,7 @@ import Categories from "./pages/Categories";
 import Contact from "./pages/Contact";
 import ProductDetail from "./pages/ProductDetail";
 import CategoryProducts from "./pages/CategoryProducts";
+import LiveSupport from "./components/LiveSupport";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
 
       {/* Sabit footer */}
       <Footer />
+      <LiveSupport />
     </div>
   );
 }

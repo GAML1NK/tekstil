@@ -30,6 +30,20 @@ const allProducts = [
     price: "399 TL",
     img: "/img/erkekGiyim.jpg",
     category: "pantolon"
+  },
+  {
+    id: 5,
+    name: "Siyah Slim Fit Pantolon",
+    price: "429 TL",
+    img: "/img/erkekGiyim.jpg",
+    category: "pantolon"
+  },
+  {
+    id: 6,
+    name: "Gri Klasik Pantolon",
+    price: "389 TL",
+    img: "/img/erkekGiyim.jpg",
+    category: "pantolon"
   }
 ];
 
