@@ -4,6 +4,8 @@ import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import Categories from "./pages/Categories";
 import Contact from "./pages/Contact";
+import ProductDetail from "./pages/ProductDetail";
+import CategoryProducts from "./pages/CategoryProducts";
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/kategoriler" element={<Categories />} />
           <Route path="/iletisim" element={<Contact />} />
+          <Route path="/urun/:id" element={<ProductDetail />} />
+          <Route path="/urunler/:kategori" element={<CategoryProducts />} />
         </Routes>
       </div>
 

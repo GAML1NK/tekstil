@@ -1,6 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-export default function ProductCard({ name, price, img }) {
+	export default function ProductCard({ id = 1, name, price, img }) {
 		return (
 			<div className="card h-100">
 				<img
@@ -12,7 +13,9 @@ export default function ProductCard({ name, price, img }) {
 				<div className="card-body">
 					<h5 className="card-title">{name}</h5>
 					<p className="card-text">{price}</p>
-					<button className="btn btn-primary">Kategoriye Git</button>
+					<Link to={`/urun/${id}`} className="btn btn-primary">
+						Ürünü Gör
+					</Link>
 				</div>
 			</div>
 		);

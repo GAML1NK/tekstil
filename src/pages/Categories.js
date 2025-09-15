@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function Categories() {
   const [categories, setCategories] = useState([
@@ -26,9 +27,13 @@ export default function Categories() {
               <div className="card-body d-flex flex-column">
                 <h5 className="card-title">{cat.name}</h5>
                 <p className="card-text flex-grow-1">{cat.desc}</p>
-                <button className="btn btn-outline-primary mt-auto" disabled>
+                <Link
+                  to={cat.name === "Erkek Giyim" ? "/urunler/gomlek" : "#"}
+                  className="btn btn-outline-primary mt-auto"
+                  disabled={cat.name !== "Erkek Giyim"}
+                >
                   Ürünleri Gör
-                </button>
+                </Link>
               </div>
             </div>
           </div>
